@@ -1,0 +1,168 @@
+*
+{
+    box-sizing: border-box;
+}
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+header
+{
+    background-color: yellowgreen;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+header ul
+{
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+header a
+{
+    color: #fff;
+}
+#logo
+{
+    margin: 0 auto;
+    font-size: 30px;
+}
+#menu li
+{
+    padding: 10px;
+}
+#social-links li
+{
+    padding: 10px;
+}
+#main
+{
+    display: flex;
+    
+}
+aside
+{
+    flex:0 0 20vw ;
+    background-color: #eee;
+    padding: 10px;
+}
+aside ul
+{
+    list-style: none;
+    padding: 0;
+}
+aside ul a{
+    color: tomato;
+    padding: 10px;
+    display: block;
+    border-bottom: 2px solid gray
+}
+aside img
+{
+    width: 100%;
+}
+.service-container
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.service-box
+{
+    border: 1px solid #eee;
+    flex-basis:32%;
+    max-width: 370px;
+    padding:10px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.service-box h1{
+    margin:5px 0 10px;
+}
+.service-box p{
+    margin:5px 0 10px;
+}
+.call-to-action
+{
+    align-self:flex-start;
+    margin-top: auto;
+}
+
+.call-to-action a
+{
+    border:2px solid transparent;
+    background-color: gray;
+    color: #fff;
+    padding: 8px 13px;
+    
+}
+.call-to-action a:hover
+{
+    background: transparent;
+    border:2px solid transparent;
+    color: gray;
+}
+.service-box img
+{
+     width:100% ;
+}
+article
+{
+    padding:10px;
+    
+}
+footer
+{
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background-color: tomato;
+}
+@media screen and (max-width:800px) 
+{
+    aside
+    {
+        flex:0 0 30vw ;
+    }
+    .service-box
+    {
+        flex-basis:48%;
+    }
+}
+@media screen and (max-width:800px) 
+{
+    header
+    {
+        flex-direction: column;
+    }
+    #logo
+    {
+        order: -1;
+    }
+    #main
+    {
+        flex-direction: column;
+    }
+    article
+    {
+        order: -1;
+    }
+    .service-container
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    h2
+    {
+        text-align: center;
+    }
+}
